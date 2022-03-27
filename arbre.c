@@ -12,4 +12,16 @@ typedef Noeud *NoeudPtr;
 
 
 
-int main{}
+int main(){
+	NoeudPtr racine = NULL;
+	racine = create();
+	printf("Par ordre prefixe: \n");
+	prefixe(racine);
+	printf("\n");
+	printf("Par ordre postfixe: \n");
+	postfixe(racine);
+	printf("\n");
+	printf("Par ordre affixe: \n");
+	affixe(racine);
+	printf("\n");
+}
