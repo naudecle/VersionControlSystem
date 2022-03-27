@@ -13,6 +13,7 @@ typedef Noeud *NoeudPtr;
 NoeudPtr create();
 
 
+<<<<<<< HEAD
 int main{}
 
 NoeudPtr create(){
@@ -33,4 +34,18 @@ NoeudPtr create(){
 	    return newPtr;
 	}
 
+=======
+int main(){
+	NoeudPtr racine = NULL;
+	racine = create();
+	printf("Par ordre prefixe: \n");
+	prefixe(racine);
+	printf("\n");
+	printf("Par ordre postfixe: \n");
+	postfixe(racine);
+	printf("\n");
+	printf("Par ordre affixe: \n");
+	affixe(racine);
+	printf("\n");
+>>>>>>> c19ce51 (update de la fonction main)
 }
